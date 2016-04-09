@@ -1,4 +1,11 @@
 
 
 
-<p>hello world</p>
+
+<% @messages.each do |message| %>
+  <p><%= message.body %></p>
+  <p><%= message.created_at %></p>
+  </br>
+  
+
+<% end %>
